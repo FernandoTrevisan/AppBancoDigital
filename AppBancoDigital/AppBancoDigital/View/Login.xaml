@@ -8,9 +8,15 @@
     <Grid>
         <StackLayout>
 
-            <StackLayout Padding="90" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
-                <Label Text="LOGIN" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
+            <Label Text=""/>
+            <Label Text=""/>
+            <Image x:Name="logo1" HeightRequest="80"/>
+            <StackLayout Padding="20" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                <Label Text="中国银行" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
+
             </StackLayout>
+
+
 
             <StackLayout VerticalOptions="StartAndExpand">
                 <Frame BackgroundColor="Transparent" Margin="20">
@@ -31,11 +37,11 @@
                 <Label Text="Caso não tenha uma conta." HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="20" />
 
 
-                <Button x:Name="btn_criar" Text="Criar uma conta"  
+                <Button x:Name="btn_criar" Text="C͙͙͟r͙͙͟i͙͙͟a͙͙͟r͙͙͟ ͙u͙͙͟m͙͙͟a͙͙͟ ͙c͙͙͟o͙͙͟n͙͙͟t͙͙͟a͙͙͟"  
                         FontAttributes="None" TextTransform="Uppercase"
                         BackgroundColor="Transparent" TextColor="Black"
                         CornerRadius="20" HorizontalOptions="Center"
-                        Clicked="btn_criar_Clicked" 
+                        Clicked="btn_criar_Clicked"
                         />
 
             </StackLayout>
