@@ -21,5 +21,10 @@ namespace AppBancoDigital.View
         {
 
         }
+
+        private void btn_criar_Unfocused(object sender, FocusEventArgs e)
+        {
+
+        }
     }
 }
