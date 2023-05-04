@@ -2,17 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Login"
-              Title="Login"
-              BackgroundColor="YellowGreen">
+              Title="Banco Digital" 
+              BackgroundColor="WhiteSmoke">
     
     <Grid>
         <StackLayout>
 
-            <StackLayout Padding="80" VerticalOptions="Start" HorizontalOptions="Center">
+            <StackLayout Padding="90" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
                 <Label Text="LOGIN" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
             </StackLayout>
 
-            <StackLayout VerticalOptions="Center">
+            <StackLayout VerticalOptions="StartAndExpand">
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
                         <Label Text="E-mail" FontSize="Body" TextColor="#000" HorizontalOptions="Start" />
@@ -24,16 +24,19 @@
                 </Frame>
 
                 <Button x:Name="btn_logar" Text="Logar" BackgroundColor="#000" TextColor="#fff"
-                        CornerRadius="20" HorizontalOptions="Center" />
-
-                <!--
-                <Button x:Name="btn_criar" Text="Não tem uma conta? Criar uma conta."
-                        FontAttributes="Italic" TextTransform="None"
-                        BackgroundColor="Transparent" TextColor="Gray"
                         CornerRadius="20" HorizontalOptions="Center"
-                        Clicked="btn_criar_Clicked" />
-                -->
-                
+                        />
+
+
+                <Label Text="Caso não tenha uma conta." HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="20" />
+
+
+                <Button x:Name="btn_criar" Text="Criar uma conta"  
+                        FontAttributes="None" TextTransform="Uppercase"
+                        BackgroundColor="Transparent" TextColor="Black"
+                        CornerRadius="20" HorizontalOptions="Center"
+                        Clicked="btn_criar_Clicked" 
+                        />
 
             </StackLayout>
 
