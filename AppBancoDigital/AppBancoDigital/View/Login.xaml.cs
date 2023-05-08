@@ -15,6 +15,7 @@ namespace AppBancoDigital.View
         public Login()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             logo1.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo1.png");
         }
 

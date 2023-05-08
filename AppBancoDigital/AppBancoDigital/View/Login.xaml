@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Login"
-              Title="Banco Digital" 
-              BackgroundColor="WhiteSmoke">
+             x:Class="AppBancoDigital.View.Login" >
+
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="blue" Offset="0.1" />
+            <GradientStop Color="DarkRed" Offset="0.5" />
+            <GradientStop Color="#f0f0f0" Offset="1.0" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
     
     <Grid>
         <StackLayout>
