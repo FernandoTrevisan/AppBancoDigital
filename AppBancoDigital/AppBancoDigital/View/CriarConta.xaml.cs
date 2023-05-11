@@ -15,6 +15,7 @@ namespace AppBancoDigital.View
         public CriarConta()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void btn_voltar_Clicked(object sender, EventArgs e)
