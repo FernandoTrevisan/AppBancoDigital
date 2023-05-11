@@ -12,17 +12,15 @@
 
         </LinearGradientBrush>
     </ContentPage.Background>
-    
-    
-    <Grid>
+
+
+    <Grid VerticalOptions="Center">
         <StackLayout>
-
-            <Label Text=""/>
-            <Label Text=""/>
-            <Image x:Name="logo1" HeightRequest="80"/>
-            <StackLayout Padding="20" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
-                <Label Text="中国银行" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
-
+            <StackLayout VerticalOptions="Center">
+                <Image x:Name="logo1" HeightRequest="80"/>
+                <StackLayout Padding="20" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                    <Label Text="中国银行" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
+                </StackLayout>
             </StackLayout>
 
 
@@ -30,11 +28,11 @@
             <StackLayout VerticalOptions="StartAndExpand">
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
-                        <Label Text="E-mail" FontSize="Body" TextColor="#000" HorizontalOptions="Start" />
-                        <Entry x:Name="txt_email" Keyboard="Email" ReturnType="Next" ClearButtonVisibility="WhileEditing" />
+                        <Label Text="CPF" FontSize="Body" TextColor="#FFFFFF" HorizontalOptions="Start" />
+                        <Entry x:Name="txt_cpf" Keyboard="Numeric" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="#FFFFFF"/>
 
-                        <Label Text="Senha" FontSize="Body" TextColor="#000" HorizontalOptions="Start" />
-                        <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" />
+                        <Label Text="Senha" FontSize="Body" TextColor="#FFFFFF" HorizontalOptions="Start" />
+                        <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#FFFFFF"/>
                     </StackLayout>
                 </Frame>
 
@@ -43,12 +41,12 @@
                         />
 
 
-                <Label Text="Caso não tenha uma conta." HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="20" />
+                <Label Text="Caso não tenha uma conta." HorizontalOptions="CenterAndExpand" TextColor="#FFFFFF" Margin="20" />
 
 
                 <Button x:Name="btn_criar" Text="C͙͙͟r͙͙͟i͙͙͟a͙͙͟r͙͙͟ ͙u͙͙͟m͙͙͟a͙͙͟ ͙c͙͙͟o͙͙͟n͙͙͟t͙͙͟a͙͙͟"  
-                        FontAttributes="None" TextTransform="Uppercase"
-                        BackgroundColor="Transparent" TextColor="Black"
+                        FontAttributes="Bold" TextTransform="Uppercase"
+                        BackgroundColor="Transparent" TextColor="#FFFFFF"
                         CornerRadius="20" HorizontalOptions="Center"
                         Clicked="btn_criar_Clicked"
                         />

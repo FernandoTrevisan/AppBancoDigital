@@ -1,21 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.FormAdd"
-               Title="FormAdd">
-            
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
-    </ContentPage.ToolbarItems>
-
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="blue" Offset="0.1" />
-            <GradientStop Color="DarkRed" Offset="0.5" />
-            <GradientStop Color="#f0f0f0" Offset="1.0" />
-
-        </LinearGradientBrush>
-    </ContentPage.Background>
+             x:Class="AppBancoDigital.View.CriarConta">
+    
 
     <ContentPage.Content>
 
@@ -26,8 +13,8 @@
                 <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" />
 
                 <StackLayout Padding="50" VerticalOptions="Start" HorizontalOptions="Center">
-                    <Image x:Name="logo1" HeightRequest="70" />
-                    <Label Text="Cadastro Correntista" FontSize="Title" TextColor="#fff" FontAttributes="Bold" />
+                    <Image x:Name="logo" HeightRequest="70" />
+                    <Label Text="Criar Conta" FontSize="Title" TextColor="#fff" FontAttributes="Bold" HorizontalOptions="Center" />
                 </StackLayout>
 
 
@@ -41,9 +28,6 @@
                             <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_cpf" IsPassword="True" TextColor="#fff" />
 
-                            <Label Text="Data Nascimento" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
-                            <DatePicker x:Name="dtpck_data_nasc" TextColor="#fff" />
-
                             <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_senha" IsPassword="True" TextColor="#fff" />
                         </StackLayout>
@@ -56,8 +40,8 @@
                         <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked" />
 
-                        <Button x:Name="btn_logout" Text="Logout" BackgroundColor="#fff" TextColor="#000"
-                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logout_Clicked" VerticalOptions="Fill" />
+                        <Button x:Name="btn_voltar" Text="Voltar" BackgroundColor="#fff" TextColor="#000"
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_voltar_Clicked" />
 
                     </FlexLayout>
 

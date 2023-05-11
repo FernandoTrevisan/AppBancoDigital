@@ -50,5 +50,15 @@ namespace AppBancoDigital.View
                 act_carregando.IsVisible = false;
             }
         }
+
+        private void btn_cadastrar_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_logout_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
