@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.FormAdd"
-               Title="FormAdd">
-            
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
-    </ContentPage.ToolbarItems>
-
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
+               >
+                                                                                                                                                        <!--         
+                                                                                                                                                        <ContentPage.ToolbarItems>
+                                                                                                                                                            <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
+                                                                                                                                                        </ContentPage.ToolbarItems>
+                                                                                                                                                        -->
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
             <GradientStop Color="blue" Offset="0.1" />
@@ -38,9 +39,10 @@
                             <Label Text="Nome" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_nome" TextColor="#fff" />
 
-                            <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
-                            <Entry x:Name="txt_cpf" IsPassword="True" TextColor="#fff" />
-
+                            <Label Text="CPF" FontSize="Body" TextColor="#fff"/>
+                            <control:MaskedEntry x:Name="txt_cpf" TextColor="#fff" Keyboard="Numeric" FontAttributes="Bold"
+                                           Mask="XXX.XXX.XXX-XX"/>
+                            
                             <Label Text="Data Nascimento" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <DatePicker x:Name="dtpck_data_nasc" TextColor="#fff" />
 
@@ -53,10 +55,10 @@
                                 AlignItems="Center"
                                 JustifyContent="SpaceEvenly">
 
-                        <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
+                        <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked" />
 
-                        <Button x:Name="btn_logout" Text="Logout" BackgroundColor="#fff" TextColor="#000"
+                        <Button x:Name="btn_logout" Text="SAIR" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logout_Clicked" VerticalOptions="Fill" />
 
                     </FlexLayout>
