@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.CriarConta"
-             BackgroundColor="Red">
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
+             x:Class="AppBancoDigital.View.CriarConta">
 
 
 
-    <ContentPage.Content>
 
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                   <GradientStop Color="blue" Offset="0.1" />
+                    <GradientStop Color="DarkRed" Offset="0.5" />
+                    <GradientStop Color="#f0f0f0" Offset="1.0" />
+
+       </LinearGradientBrush>
+    </ContentPage.Background>
+   
+        
         <Grid>
 
             <StackLayout>
@@ -27,10 +36,11 @@
                             <Label Text="Nome" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_nome" TextColor="#fff" />
 
-                            <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
-                            <Entry x:Name="txt_cpf" IsPassword="True" TextColor="#fff" />
+                        <Label Text="CPF" FontSize="Body" TextColor="#fff"/>
+                        <control:MaskedEntry x:Name="txt_cpf" TextColor="#fff" Keyboard="Numeric" FontAttributes="Bold"
+                                           Mask="XXX.XXX.XXX-XX"/>
 
-                            <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                        <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_senha" IsPassword="True" TextColor="#fff" />
                         </StackLayout>
                     </Frame>
@@ -39,10 +49,10 @@
                                 AlignItems="Center"
                                 JustifyContent="SpaceEvenly">
 
-                        <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
+                        <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked" />
 
-                        <Button x:Name="btn_voltar" Text="Voltar" BackgroundColor="#fff" TextColor="#000"
+                        <Button x:Name="btn_voltar" Text="Voltar" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_voltar_Clicked" />
 
                     </FlexLayout>
@@ -55,5 +65,5 @@
 
         </Grid>
 
-    </ContentPage.Content>
+ 
 </ContentPage>
