@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              x:Class="AppBancoDigital.View.Login" >
 
 
@@ -28,16 +29,17 @@
             <StackLayout VerticalOptions="StartAndExpand">
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
-                        <Label Text="CPF" FontSize="Body" TextColor="#FFFFFF" HorizontalOptions="Start" />
-                        <Entry x:Name="txt_cpf" Keyboard="Numeric" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="#FFFFFF"/>
-
+                        <Label Text="CPF" FontSize="Body" TextColor="#fff"/>
+                        <control:MaskedEntry x:Name="txt_cpf" TextColor="#fff" Keyboard="Numeric" FontAttributes="Bold"
+                                           Mask="XXX.XXX.XXX-XX"/>
+                        
                         <Label Text="Senha" FontSize="Body" TextColor="#FFFFFF" HorizontalOptions="Start" />
                         <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#FFFFFF"/>
                     </StackLayout>
                 </Frame>
 
                 <Button x:Name="btn_logar" Text="Logar" BackgroundColor="#000" TextColor="#fff"
-                        CornerRadius="20" HorizontalOptions="Center"
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logar_Clicked"
                         />
 
 
