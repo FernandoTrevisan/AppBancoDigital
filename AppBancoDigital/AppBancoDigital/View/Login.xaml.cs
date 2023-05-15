@@ -50,5 +50,25 @@ namespace AppBancoDigital.View
             }
 
         }
+
+        private void btn_criar_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btn_logar_Clicked(object sender, EventArgs e)
+        {
+            NavigationPage.SetHasNavigationBar(this, false);
+
+            try
+            {
+                await Navigation.PushAsync(new FormAdd());
+            }
+
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
+            }
+        }
     }
 }

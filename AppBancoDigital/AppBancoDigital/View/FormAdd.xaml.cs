@@ -16,7 +16,10 @@ namespace AppBancoDigital.View
     {
         public FormAdd()
         {
+           
+
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
