@@ -24,7 +24,7 @@ namespace AppBancoDigital.View
 
         private void btn_criar_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new View.CriarConta());
+            App.Current.MainPage = new NavigationPage(new View.FormAdd());
 
         }
 
@@ -62,7 +62,7 @@ namespace AppBancoDigital.View
 
             try
             {
-                await Navigation.PushAsync(new FormAdd());
+                await Navigation.PushAsync(new Conta());
             }
 
             catch (Exception ex)
