@@ -44,7 +44,7 @@
                                            Mask="XXX.XXX.XXX-XX"/>
                             
                             <Label Text="Data Nascimento" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
-                            <DatePicker x:Name="dtpck_data_nasc" TextColor="#fff" />
+                            <DatePicker x:Name="dtpck_data_nasc" TextColor="#fff" Format="dd/MM/yyyy" />
 
                             <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_senha" IsPassword="True" TextColor="#fff" />
@@ -56,7 +56,7 @@
                                 JustifyContent="SpaceEvenly">
 
                         <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#000" TextColor="#fff"
-                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked" />
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked_1" />
 
                         <Button x:Name="btn_logout" Text="SAIR" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logout_Clicked" VerticalOptions="Fill" />

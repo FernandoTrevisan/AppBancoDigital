@@ -30,15 +30,17 @@ namespace AppBancoDigital.View
             }
         }
 
-        private async void btn_cadastrar_Clicked(object sender, EventArgs e)
+        private void btn_cadastrar_Clicked(object sender, EventArgs e)
         {
+            
             try
             {
-                await Navigation.PushAsync(new Login());
+                DisplayAlert("CADASTRADO COM SUCESSO", "OI", "OK");
+                Navigation.PushAsync(new Login());
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
+                 DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
             }
 
 

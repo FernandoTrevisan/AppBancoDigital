@@ -2,11 +2,33 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Conta">
-    <ContentPage.Content>
+    
+    
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="blue" Offset="0.1" />
+            <GradientStop Color="DarkRed" Offset="0.5" />
+            <GradientStop Color="#f0f0f0" Offset="1.0" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+    <Grid> 
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+
+            <Label Text="CONTA NOVA ABERTA PARABENS!!!" FontSize="20" TextColor="#ffff" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+                
+            </Label>
+
+            <Button Text="sair" Clicked="Button_Clicked" ></Button>
+                
+
+
+        </StackLayout> 
+        
+    </Grid>
+
 </ContentPage>
