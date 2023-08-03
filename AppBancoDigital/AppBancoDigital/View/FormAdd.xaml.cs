@@ -22,18 +22,18 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void ToolbarItem_Clicked(object sender, EventArgs e)
+       /* private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible = true;
 
             try
             {
-                Correntista co = await DataServiceCorrentista.Cadastrar(new Correntista
+               Correntista co = await DataServiceCorrentista.Cadastrar(new Correntista
                 {
                     Nome = txt_nome.Text,
-                    Cpf = Convert.ToInt32(txt_cpf.Text), 
-                    Data_Nasc = dtpck_data_nasc.Date,
+                    Cpf = txt_cpf.Text, 
+                    Data_Nascimento = dtpck_data_nasc.Date,
                     Senha = txt_senha.Text
                 });
 
@@ -52,7 +52,7 @@ namespace AppBancoDigital.View
                 act_carregando.IsRunning = false;
                 act_carregando.IsVisible = false;
             }
-        }
+        }*/
 
 
         private async void btn_logout_Clicked(object sender, EventArgs e)

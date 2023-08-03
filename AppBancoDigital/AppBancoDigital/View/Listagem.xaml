@@ -13,7 +13,7 @@
 
             <StackLayout Orientation="Horizontal">
                 <SearchBar x:Name="txt_q" />
-                <Button Text="Buscar" Clicked="Button_Clicked" />
+                <Button Text="Buscar"  />
             </StackLayout>
 
             <ActivityIndicator x:Name="act_carregando" />

@@ -29,7 +29,7 @@ namespace AppBancoDigital.View
             Navigation.PushAsync(new View.FormAdd());
         }
 
-        protected override void OnAppearing()
+        /*protected override void OnAppearing()
         {
             if (ListaCorrentistas.Count == 0)
             {
@@ -39,6 +39,7 @@ namespace AppBancoDigital.View
                 {
                     
 
+
                     List<Correntista> temp = await DataServiceCorrentista.GetCorrentistasAsync();
 
                     foreach (Correntista item in temp)
@@ -46,8 +47,8 @@ namespace AppBancoDigital.View
                         ListaCorrentistas.Add(item);
                     }
                 });
-            }
-        }
+            } 
+        }*/
 
         private async void getAllRows()
         {
@@ -67,14 +68,14 @@ namespace AppBancoDigital.View
             }
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+       /* private async void Button_Clicked(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible = true;
 
             try
             {
-                List<Correntista> temp = await DataServiceCorrentista.SearchAsync(txt_q.Text);
+               List<Correntista> temp = await DataServiceCorrentista.SearchAsync(txt_q.Text);
 
                 ListaCorrentistas.Clear();
 
@@ -93,7 +94,7 @@ namespace AppBancoDigital.View
                 act_carregando.IsVisible = false;
             }
 
-        }
+        }*/
 
         private async void MenuItem_Clicked(object sender, EventArgs e)
         {
@@ -105,7 +106,7 @@ namespace AppBancoDigital.View
                 MenuItem menu = sender as MenuItem;
                 Correntista correntista_selecionado = menu.BindingContext as Correntista;
 
-                await DataServiceCorrentista.DeleteAsync(correntista_selecionado.Id);
+                //await DataServiceCorrentista.DeleteAsync(correntista_selecionado.Id);
 
                 ListaCorrentistas.Remove(correntista_selecionado);
             }
