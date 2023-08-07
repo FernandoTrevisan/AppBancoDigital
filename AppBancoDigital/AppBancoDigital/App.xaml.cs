@@ -9,6 +9,7 @@ namespace AppBancoDigital
 {
     public partial class App : Application
     {
+        public static Model.Correntista DadosCorrentista { get; set; }
         public App()
         {
             InitializeComponent();
@@ -21,15 +22,9 @@ namespace AppBancoDigital
             MainPage = new NavigationPage(new View.Login());
         }
 
-        public List<DadosDoUsuario> list_usuarios = new List<DadosDoUsuario>
-        {
-            new DadosDoUsuario()
-            {
-                Cpf = "123.456.789-10",
-                Senha = "12345678910"
-            }
-        };
-
+       
+        
+       
         protected override void OnStart()
         {
         }

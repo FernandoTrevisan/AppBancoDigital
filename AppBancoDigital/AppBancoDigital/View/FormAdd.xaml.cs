@@ -22,7 +22,9 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-       /* private async void ToolbarItem_Clicked(object sender, EventArgs e)
+       
+        /*
+         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             act_carregando.IsRunning = true;
             act_carregando.IsVisible = true;
@@ -52,7 +54,8 @@ namespace AppBancoDigital.View
                 act_carregando.IsRunning = false;
                 act_carregando.IsVisible = false;
             }
-        }*/
+        }
+        */
 
 
         private async void btn_logout_Clicked(object sender, EventArgs e)
@@ -78,14 +81,34 @@ namespace AppBancoDigital.View
         private async void btn_cadastrar_Clicked_1(object sender, EventArgs e)
         {
 
+            string[] cpf_pontuado = txt_cpf.Text.Split('.', '-');
+            string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
             try
             {
-                await DisplayAlert("CADASTRADO", "Cadastrado com sucesso!", "OK");
-                await Navigation.PushAsync(new Login());
+                Model.Correntista c = await DataServiceCorrentista.SaveAsync(new Model.Correntista
+                {
+                    Nome = txt_nome.Text,
+                    Data_Nascimento = dtpck_data_nasc.Date,
+                    Email = txt_email.Text,
+                    Cpf = cpf_digitado,
+                    Senha = txt_senha.Text,
+                });
+
+                if (c.Id != null)
+                {
+
+                    App.DadosCorrentista = c;
+
+
+                    await Navigation.PushAsync(new View.Login());
+                }
+                else
+                    throw new Exception("Ocorreu um erro ao salvar seu cadastro.");
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
+                Console.WriteLine(ex.StackTrace);
+                await DisplayAlert("Ops!", ex.Message, "OK");
             }
         }
     }

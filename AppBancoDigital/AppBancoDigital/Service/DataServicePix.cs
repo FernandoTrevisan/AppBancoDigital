@@ -9,6 +9,7 @@ namespace AppBancoDigital.Service
 {
     public class DataServicePix : DataService
     {
+       /* 
         public static async Task<Transacao> EnviarAsync(Transacao t)
         {
             var json_a_enviar = JsonConvert.SerializeObject(t);
@@ -18,9 +19,10 @@ namespace AppBancoDigital.Service
             return JsonConvert.DeserializeObject<Transacao>(json);
         }
 
-
+        */
         
-        public static async Task<Transacao> ReceberAsync(Transacao t)
+        /*
+         public static async Task<Transacao> ReceberAsync(Transacao t)
         {
             var json_a_enviar = JsonConvert.SerializeObject(t);
 
@@ -28,5 +30,7 @@ namespace AppBancoDigital.Service
 
             return JsonConvert.DeserializeObject<Transacao>(json);
         }
+
+        */
     }
 }

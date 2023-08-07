@@ -39,6 +39,9 @@
                             <Label Text="Nome" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_nome" TextColor="#fff" />
 
+                            <Label Text="Email" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                            <Entry x:Name="txt_email" TextColor="#fff"  />
+                            
                             <Label Text="CPF" FontSize="Body" TextColor="#fff"/>
                             <control:MaskedEntry x:Name="txt_cpf" TextColor="#fff" Keyboard="Numeric" FontAttributes="Bold"
                                            Mask="XXX.XXX.XXX-XX"/>

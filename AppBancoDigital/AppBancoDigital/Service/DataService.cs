@@ -112,6 +112,4 @@ namespace AppBancoDigital.Service
 
         }
     }
-
-
 }

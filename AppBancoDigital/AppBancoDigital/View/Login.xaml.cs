@@ -36,10 +36,15 @@ namespace AppBancoDigital.View
                 string cpf = txt_cpf.Text;
                 string senha = txt_senha.Text;
 
-                if (PropriedadesApp.list_usuarios.Any(i => (i.Cpf == cpf && i.Senha == senha)))
+                
+                 /* if (PropriedadesApp.list_usuarios.Any(i => (i.Cpf == cpf && i.Senha == senha)))
                 {
                     App.Current.Properties.Add("usuario_logado", cpf);
-                    App.Current.MainPage = new FormAdd();
+                    App.Current.MainPage = new CriarConta();
+                } */
+                 if (cpf == txt_cpf.Text)
+                {
+
                 }
                 else
                     throw new Exception("Dados incorretos, tente novamente.");
@@ -51,10 +56,7 @@ namespace AppBancoDigital.View
 
         }
 
-        private void btn_criar_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private async void btn_logar_Clicked(object sender, EventArgs e)
         {
