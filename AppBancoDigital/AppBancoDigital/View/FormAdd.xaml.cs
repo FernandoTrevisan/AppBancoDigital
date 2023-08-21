@@ -16,71 +16,15 @@ namespace AppBancoDigital.View
     {
         public FormAdd()
         {
-           
 
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-        }
 
-       
-        /*
-         private async void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-            act_carregando.IsRunning = true;
-            act_carregando.IsVisible = true;
-
-            try
-            {
-               Correntista co = await DataServiceCorrentista.Cadastrar(new Correntista
-                {
-                    Nome = txt_nome.Text,
-                    Cpf = txt_cpf.Text, 
-                    Data_Nascimento = dtpck_data_nasc.Date,
-                    Senha = txt_senha.Text
-                });
-
-                string msg = $"Correntista inserido com sucesso. Código gerado: {co.Id} ";
-
-                await DisplayAlert("Sucesso!", msg, "OK");
-
-                await Navigation.PushAsync(new Listagem());
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops", ex.Message, "OK");
-            }
-            finally
-            {
-                act_carregando.IsRunning = false;
-                act_carregando.IsVisible = false;
-            }
-        }
-        */
-
-
-        private async void btn_logout_Clicked(object sender, EventArgs e)
-        {
-            try
-            {
-                bool confirm = await DisplayAlert("Tem certeza?", "Desconectar sua conta?", "Sim", "Não");
-
-                if (confirm)
-                {
-                    App.Current.Properties.Remove("usuario_logado");
-                    App.Current.MainPage = new Login();
-                }
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Ops", ex.Message, "OK");
-            }
-
-
+            logo1.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo.png");
         }
 
         private async void btn_cadastrar_Clicked_1(object sender, EventArgs e)
         {
-
             string[] cpf_pontuado = txt_cpf.Text.Split('.', '-');
             string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
             try
@@ -99,7 +43,6 @@ namespace AppBancoDigital.View
 
                     App.DadosCorrentista = c;
 
-
                     await Navigation.PushAsync(new View.Login());
                 }
                 else
@@ -110,6 +53,23 @@ namespace AppBancoDigital.View
                 Console.WriteLine(ex.StackTrace);
                 await DisplayAlert("Ops!", ex.Message, "OK");
             }
+
+        }
+
+
+        private async void btn_logout_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Login());
+            }
+
+
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
+            }
+
         }
     }
 }
