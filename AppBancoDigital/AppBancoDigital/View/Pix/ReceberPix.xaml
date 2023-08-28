@@ -2,9 +2,23 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Pix.ReceberPix">
-  <ContentView.Content>
+
+        <ContentPage.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="blue" Offset="0.1" />
+                <GradientStop Color="DarkRed" Offset="0.5" />
+                <GradientStop Color="#f0f0f0" Offset="1.0" />
+
+            </LinearGradientBrush>
+        </ContentPage.Background>
+
+        <ContentView.Content>
       <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
+          
+          
+            <Button Text="Ler um QR Code" Clicked="Button_Clicked" />
+          
+          
+        </StackLayout>
   </ContentView.Content>
 </ContentView>
