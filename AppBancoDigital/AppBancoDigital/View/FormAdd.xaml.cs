@@ -20,7 +20,7 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
-            logo1.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo.png");
+            logo1.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo1.png");
         }
 
         private async void btn_cadastrar_Clicked_1(object sender, EventArgs e)

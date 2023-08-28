@@ -22,15 +22,16 @@
                 <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" />
 
                 <StackLayout Padding="50" VerticalOptions="Start" HorizontalOptions="Center">
-                    <Image x:Name="logo1" HeightRequest="70" />
-                    <Label Text="Cadastro Correntista" FontSize="Title" TextColor="#fff" FontAttributes="Bold" />
+                    <Image x:Name="logo1" HeightRequest="80"/>
+                    <Label Text="口座名義人登録" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
                 </StackLayout>
 
 
                 <StackLayout VerticalOptions="Center">
 
                     <Frame BackgroundColor="Transparent" Margin="20">
-                        <StackLayout>
+                        <StackLayout >
+                            
                             <Label Text="Nome" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_nome" TextColor="#fff" />
 
