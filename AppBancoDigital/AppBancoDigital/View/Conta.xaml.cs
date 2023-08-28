@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using QRCoder;
+using System.IO;
+
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -20,7 +23,7 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void btn_sair_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -38,5 +41,19 @@ namespace AppBancoDigital.View
             }
 
         }
+
+        
+
+        private async void enviarpix_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Pix.EnviarPix());
+        }
+
+        private async void pixlerqrcode_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Pix.PixLerQrCode());
+        }
+
+        
     }
 }

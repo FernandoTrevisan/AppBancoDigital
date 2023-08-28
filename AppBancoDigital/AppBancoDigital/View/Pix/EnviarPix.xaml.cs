@@ -12,11 +12,12 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View.Pix
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EnviarPix : ContentView
+    public partial class EnviarPix : ContentPage
     {
         public EnviarPix()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace AppBancoDigital.View.Pix
             img_qrcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
 
         }
-        
 
+        
     }
 }

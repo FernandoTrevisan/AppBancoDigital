@@ -10,18 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View.Pix
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ReceberPix : ContentView
+    public partial class ReceberPix : ContentPage
     {
         public ReceberPix()
         {
             InitializeComponent();
         }
-        /*
+        
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new View.Pix.PixLerQrCode());
         }
-        */
+        
 
     }
 }

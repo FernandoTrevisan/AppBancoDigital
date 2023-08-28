@@ -11,11 +11,13 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View.Pix
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PixLerQrCode : ContentView
+    public partial class PixLerQrCode : ContentPage
     {
         public PixLerQrCode()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
 
             zxing.OnScanResult += (result) =>
                Device.BeginInvokeOnMainThread(() =>

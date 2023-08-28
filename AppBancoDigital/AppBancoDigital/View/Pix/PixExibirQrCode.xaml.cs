@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View.Pix
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PixExibirQrCode : ContentView
+    public partial class PixExibirQrCode : ContentPage
     {
         public PixExibirQrCode()
         {

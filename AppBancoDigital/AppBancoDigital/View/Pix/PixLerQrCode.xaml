@@ -4,7 +4,7 @@
              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"  
              x:Class="AppBancoDigital.View.Pix.PixLerQrCode"
              >
-<!--
+
     <ContentPage.Content>
 
         <StackLayout>
