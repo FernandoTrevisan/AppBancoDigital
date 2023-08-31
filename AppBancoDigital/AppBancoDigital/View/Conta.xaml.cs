@@ -54,6 +54,11 @@ namespace AppBancoDigital.View
             await Navigation.PushAsync(new View.Pix.PixLerQrCode());
         }
 
-        
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new View.Pix.EnviarPix());
+
+            await Navigation.PushAsync(new View.Pix.PixLerQrCode());
+        }
     }
 }
