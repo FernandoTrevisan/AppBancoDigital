@@ -30,23 +30,23 @@
             <StackLayout VerticalOptions="StartAndExpand">
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
-                        <Label Text="CPF" FontSize="Body" TextColor="#fff"/>
+                        <Label Text="CPF(公積金) :" FontSize="Body" TextColor="#fff"/>
                         <control:MaskedEntry x:Name="txt_cpf" TextColor="#fff" Keyboard="Numeric" FontAttributes="Bold"
                                            Mask="XXX.XXX.XXX-XX"/>
-                        
-                        <Label Text="Senha" FontSize="Body" TextColor="#FFFFFF" HorizontalOptions="Start" />
+
+                        <Label Text="Senha(密碼) :" FontSize="Body" TextColor="#FFFFFF" HorizontalOptions="Start" />
                         <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#FFFFFF"/>
                     </StackLayout>
                 </Frame>
 
-                <Button x:Name="btn_logar" Text="Logar" BackgroundColor="#000" TextColor="#fff"
+                <Button x:Name="btn_logar" Text="LOGAR" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logar_Clicked"
                         />
 
 
-                <Label Text="Caso não tenha uma conta." HorizontalOptions="CenterAndExpand" TextColor="#FFFFFF" Margin="20" />
-
-
+                <Label Text="Caso não tenha uma conta." HorizontalOptions="Center" TextColor="#FFFFFF" Margin="20" />
+                
+                
                 <Button x:Name="btn_criar" Text="C͙͙͟r͙͙͟i͙͙͟a͙͙͟r͙͙͟ ͙u͙͙͟m͙͙͟a͙͙͟ ͙c͙͙͟o͙͙͟n͙͙͟t͙͙͟a͙͙͟"  
                         FontAttributes="Bold" TextTransform="Uppercase"
                         BackgroundColor="Transparent" TextColor="#FFFFFF"

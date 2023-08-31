@@ -31,21 +31,22 @@
 
                     <Frame BackgroundColor="Transparent" Margin="20">
                         <StackLayout >
-                            
-                            <Label Text="Nome" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+
+                            <Label Text="Nome(姓名) :" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_nome" TextColor="#fff" />
 
-                            <Label Text="Email" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+
+                            <Label Text="Email(電子郵件) : " FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_email" TextColor="#fff"  />
-                            
-                            <Label Text="CPF" FontSize="Body" FontAttributes="Bold" TextColor="#fff"/>
+
+                            <Label Text="CPF(公積金) :" FontSize="Body" FontAttributes="Bold" TextColor="#fff"/>
                             <control:MaskedEntry x:Name="txt_cpf" TextColor="#fff" Keyboard="Numeric" FontAttributes="Bold"
                                            Mask="XXX.XXX.XXX-XX"/>
-                            
-                            <Label Text="Data Nascimento" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+
+                            <Label Text="Data Nascimento(出生日期) :" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <DatePicker x:Name="dtpck_data_nasc" TextColor="#fff" Format="dd/MM/yyyy" />
 
-                            <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                            <Label Text="Senha(密碼) :" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                             <Entry x:Name="txt_senha" IsPassword="True" TextColor="#fff" />
                         </StackLayout>
                     </Frame>
@@ -57,7 +58,7 @@
                         <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked_1" />
 
-                        <Button x:Name="btn_logout" Text="SAIR" BackgroundColor="#000" TextColor="#fff"
+                        <Button x:Name="btn_logout" Text="VOLTAR" BackgroundColor="#000" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logout_Clicked" VerticalOptions="Fill" />
 
                     </FlexLayout>
