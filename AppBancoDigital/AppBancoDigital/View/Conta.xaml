@@ -23,12 +23,15 @@
 
             <StackLayout Grid.Row="0"  Padding="20" Spacing="20">
 
-                <StackLayout Orientation="Horizontal">
-                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3334/3334385.png" Padding="10" HorizontalOptions="StartAndExpand"/>
+                <Grid ColumnDefinitions="50,*,50">
+                    
+                    <ImageButton Grid.Column="0" HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3334/3334385.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
-                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" Padding="10" />
+                    <Label x:Name="lbl_nome" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="#FFFFFF" FontSize="20"/>
 
-                </StackLayout>
+                    <ImageButton Grid.Column="2" HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" Padding="10" HorizontalOptions="EndAndExpand" />
+
+                </Grid>
 
 
 

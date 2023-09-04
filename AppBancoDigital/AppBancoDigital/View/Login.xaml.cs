@@ -44,6 +44,7 @@ namespace AppBancoDigital.View
                 if (c.Id != null)
                 {
                     App.DadosCorrentista = c;
+                    App.nome = c.Nome;
                     App.Current.MainPage = new NavigationPage(new View.Conta());
 
                 }

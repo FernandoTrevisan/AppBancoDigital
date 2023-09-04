@@ -9,6 +9,8 @@ namespace AppBancoDigital
 {
     public partial class App : Application
     {
+
+        public static string nome;
         public static Model.Correntista DadosCorrentista { get; set; }
         public App()
         {
