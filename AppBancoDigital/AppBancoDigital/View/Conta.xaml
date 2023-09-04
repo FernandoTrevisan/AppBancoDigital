@@ -24,9 +24,9 @@
             <StackLayout Grid.Row="0"  Padding="20" Spacing="20">
 
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/30/30412.png" Padding="10" HorizontalOptions="StartAndExpand"/>
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3334/3334385.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
-                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="50" Source="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" Padding="10" />
+                    <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" Padding="10" />
 
                 </StackLayout>
 
@@ -35,39 +35,39 @@
             </StackLayout>
 
             <StackLayout Grid.Row="1" Padding="20" Spacing="20">
-                <Label Text="Etec coin" TextColor="black" FontSize="20" FontAttributes="Bold" />
-                <Label Text="R$₿ 1.000,00" TextColor="black" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold" />
+                <Label Text="Etec coin" TextColor="White" FontSize="20" FontAttributes="Bold" />
+                <Label Text="R$₿ 1.000,00" TextColor="White" FontSize="24" Margin="0, -20, 0, 0" FontAttributes="Bold" />
 
                 <ScrollView Orientation="Horizontal">
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://w7.pngwing.com/pngs/370/294/png-transparent-pix-brands-icon.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="ImageButton_Clicked"/>
-                            <Label Text="Area Pix" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
-                        </StackLayout>
-
-                        
-
-                        <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/126/126230.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
-                            <Label Text="Transações" FontSize="12" FontAttributes="Bold" TextColor="black" HorizontalOptions="Center"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://imagensfree.com.br/wp-content/uploads/2022/01/icone-pix-outline-nubank.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="ImageButton_Clicked"/>
+                            <Label Text="Area Pix" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 
 
+
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/2321/2321202.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
-                            <Label Text="Deposito" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/126/126230.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Transações" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
+
+
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/2321/2321202.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Deposito" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/3102/3102610.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
-                            <Label Text="Investimentos" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/631/631172.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Investimentos" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 
                         <StackLayout>
-                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/7031/7031067.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
-                            <Label Text="Seguros" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/1518/1518637.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Seguros" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 
 
@@ -76,14 +76,53 @@
                 </ScrollView>
 
 
-                <Button Margin="0, 15, 0, 0" FontAttributes="Bold" BackgroundColor="#f0f1f5" Text="Cartão Digital" TextColor="black" CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
+                <Button Margin="0, 15, 0, 20" FontAttributes="Bold" BackgroundColor="#f0f1f5" Text="Cartão Digital" TextColor="black"  CornerRadius="10"  ContentLayout="Left, -50" Padding="0, 10, 140, 10"/>
 
-               
-                
 
-                <StackLayout Spacing="20" Padding="142">
+                <ScrollView Orientation="Horizontal">
+
+                    <StackLayout Orientation="Horizontal" Padding="5" Spacing="20">
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="30" WidthRequest="250" HeightRequest="30">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="15" Text="2022年中國對巴西投資銳減78%創13年來最低水平" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="30" WidthRequest="250" HeightRequest="30">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="15" Text="2022年中國對巴西投資下降78%" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+                        <Frame BackgroundColor="#f0f1f5" CornerRadius="30" WidthRequest="250" HeightRequest="40">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontSize="15" Text="9月8日至11日，集團將在中國東南部的廈門參加全球最大的投資貿易促進活動之一的中國國際投資貿易洽談會。" TextColor="Black" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Frame>
+
+
+                    </StackLayout>
+                </ScrollView>
+
+
+
+
+
+                <StackLayout Spacing="20" Padding="120">
                     <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/1828/1828427.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="btn_sair_Clicked" />
-                    <Label Text="Sair" FontSize="12" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+                    <Label Text="Sair" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                 </StackLayout>
 
 
