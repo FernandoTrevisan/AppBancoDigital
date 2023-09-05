@@ -46,8 +46,6 @@ namespace AppBancoDigital.View
 
         
 
-      
-
        
 
         private async void ImageButton_Clicked(object sender, EventArgs e)

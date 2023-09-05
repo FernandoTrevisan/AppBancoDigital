@@ -18,17 +18,14 @@ namespace AppBancoDigital.View.Pix
         public AreaPix()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             
-            ZXing.OnScanResult += (result) =>
-              Device.BeginInvokeOnMainThread(() =>
-              {
-                  lblResult.Text = result.Text;
-              });
+            
         }
 
         private void GerarPix_Clicked(object sender, EventArgs e)
         {
-            tring teste = "Chave da Transferência: FernandoTrevisan ";
+            string teste = "Chave da Transferência: FernandoTrevisan ";
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);
