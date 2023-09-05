@@ -1,15 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              
-             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"  
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
              
-             x:Class="AppBancoDigital.View.Pix.PixLerQrCode"
-             >
+             x:Class="AppBancoDigital.View.Pix.AreaPix">
 
+    
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="blue" Offset="0.1" />
+            <GradientStop Color="DarkRed" Offset="0.5" />
+            <GradientStop Color="#f0f0f0" Offset="1.0" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+    
     <ContentPage.Content>
-
         <StackLayout>
+
+            
+            <Button Text="Gerar QR CODE" x:Name="GerarPix" Clicked="GerarPix_Clicked" />
+
+            <Label Text="QR CODE VAI APARECER ABAIXO: " TextColor="Black" />
+
+            <Image x:Name="img_qrcode" />
+
+            <Button Text="Ler um QR Code" x:Name="LerPix" Clicked="LerPix_Clicked" />
+
+            
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="4*"/>
@@ -27,6 +47,7 @@
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"/>
             </Grid>
+
 
         </StackLayout>
     </ContentPage.Content>

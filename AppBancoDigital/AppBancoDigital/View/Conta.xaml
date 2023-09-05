@@ -25,11 +25,11 @@
 
                 <Grid ColumnDefinitions="50,*,50">
                     
-                    <ImageButton Grid.Column="0" HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3334/3334385.png" Padding="10" HorizontalOptions="StartAndExpand"/>
+                    <ImageButton Grid.Column="0" HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="20" Source="https://cdn-icons-png.flaticon.com/512/3334/3334385.png" Padding="10" HorizontalOptions="StartAndExpand"/>
 
                     <Label x:Name="lbl_nome" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="#FFFFFF" FontSize="20"/>
 
-                    <ImageButton Grid.Column="2" HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="30" Source="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" Padding="10" HorizontalOptions="EndAndExpand" />
+                    <ImageButton Grid.Column="2" HeightRequest="50" WidthRequest="50" BackgroundColor="White" CornerRadius="20" Source="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" Padding="10" HorizontalOptions="EndAndExpand" />
 
                 </Grid>
 
