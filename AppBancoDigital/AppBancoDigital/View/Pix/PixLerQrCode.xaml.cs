@@ -40,5 +40,11 @@ namespace AppBancoDigital.View.Pix
             base.OnDisappearing();
         }
 
+        
+
+        private async void btn_voltar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Conta());
+        }
     }
 }

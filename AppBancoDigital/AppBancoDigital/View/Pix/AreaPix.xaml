@@ -20,33 +20,17 @@
     <ContentPage.Content>
         <StackLayout>
 
-            
-            <Button Text="Gerar QR CODE" x:Name="GerarPix" Clicked="GerarPix_Clicked" />
+          
+                <Button Text="Gerar QR CODE" x:Name="GerarPix" Clicked="GerarPix_Clicked" />
 
-            <Label Text="QR CODE VAI APARECER ABAIXO: " TextColor="Black" />
+                <Label Text="QR CODE VAI APARECER ABAIXO: "  HorizontalOptions="Center" TextColor="#000" />
 
-            <Image x:Name="img_qrcode" />
+                <Image x:Name="img_qrcode" />
 
-            <Button Text="Ler um QR Code" x:Name="LerPix" Clicked="LerPix_Clicked" />
+                <Button Text="Ler um QR Code" x:Name="LerPix"   Clicked="LerPix_Clicked"  />
 
-            
-            <Grid VerticalOptions="FillAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="4*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
 
-                <zxing:ZXingScannerView x:Name="zxing"
-                                         VerticalOptions="FillAndExpand"/>
-                <zxing:ZXingDefaultOverlay TopText="Segure o Telefone no QR CODE"
-                                           BottomText="O resultado vai aparecer abaixo" />
-                <Label x:Name="lblResult"
-                       Grid.Row="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"/>
-            </Grid>
+           
 
 
         </StackLayout>

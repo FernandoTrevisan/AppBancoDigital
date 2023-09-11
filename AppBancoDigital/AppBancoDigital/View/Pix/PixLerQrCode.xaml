@@ -26,7 +26,11 @@
                        VerticalOptions="Center"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"/>
+                
             </Grid>
+
+            <Button x:Name="btn_voltar" Text="VOLTAR" BackgroundColor="#000" TextColor="#fff"
+            CornerRadius="10" HorizontalOptions="CenterAndExpand" Clicked="btn_voltar_Clicked" VerticalOptions="Center" />
 
         </StackLayout>
     </ContentPage.Content>

@@ -37,24 +37,33 @@ namespace AppBancoDigital.View.Pix
 
         private void LerPix_Clicked(object sender, EventArgs e)
         {
-            
-           
+
+            Navigation.PushAsync(new View.Pix.PixLerQrCode());
+
 
         }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-
-            zxing.IsScanning = true;
-        }
-
-        protected override void OnDisappearing()
-        {
-            zxing.IsScanning = false;
-
-            base.OnDisappearing();
-        }
+        
 
     }
 }
+
+/* XAML
+            <Grid VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <zxing:ZXingScannerView x:Name="zxing"
+                                         VerticalOptions="FillAndExpand"/>
+                <zxing:ZXingDefaultOverlay TopText="Segure o Telefone no QR CODE"
+                                           BottomText="O resultado vai aparecer abaixo" />
+                <Label x:Name="lblResult"
+                       Grid.Row="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+            </Grid> 
+         
+        */
