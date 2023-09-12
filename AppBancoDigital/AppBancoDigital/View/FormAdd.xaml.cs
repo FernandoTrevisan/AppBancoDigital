@@ -37,6 +37,19 @@ namespace AppBancoDigital.View
                     Cpf = cpf_digitado,
                     Senha = txt_senha.Text,
                 });
+                
+                /* CPF alterar
+                 
+                if (c.Cpf != null)
+                {
+
+                }
+                else { 
+                
+                
+                }
+
+                */
 
                 if (c.Id != null)
                 {

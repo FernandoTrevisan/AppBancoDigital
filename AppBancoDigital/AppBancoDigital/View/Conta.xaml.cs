@@ -23,6 +23,7 @@ namespace AppBancoDigital.View
             NavigationPage.SetHasNavigationBar(this, false);
 
             lbl_nome.Text = "Seja bem-vindo(a)\n" + App.nome;
+
         }
 
         private async void btn_sair_Clicked(object sender, EventArgs e)

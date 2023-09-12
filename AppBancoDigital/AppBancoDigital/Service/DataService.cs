@@ -83,9 +83,21 @@ namespace AppBancoDigital.Service
 
             switch (status_code)
             {
+
+
+                // Mensagem de erro em CPF
                 case System.Net.HttpStatusCode.BadRequest:
-                    msg_erro = "A requisição não pode ser atendida agora. Tente mais tarde.";
+                    msg_erro = "Este CPF já esta sendo utilizado! Porfavor entrar no suporte para alteração.";
                     break;
+                   
+                    
+                    /*
+                        case System.Net.HttpStatusCode.BadRequest:
+                        msg_erro = "A requisição não pode ser atendida agora. Tente mais tarde.";
+                        break;
+                    */
+
+
 
                 case System.Net.HttpStatusCode.NotFound:
                     msg_erro = "Recurso indisponível no momento. Tente mais tarde.";
