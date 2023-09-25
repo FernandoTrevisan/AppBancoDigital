@@ -20,17 +20,60 @@
     <ContentPage.Content>
         <StackLayout>
 
-          
-                <Button Text="Gerar QR CODE" x:Name="GerarPix" Clicked="GerarPix_Clicked" />
+            <Label></Label>
+            
+            <ScrollView Orientation="Horizontal">
 
-                <Label Text="QR CODE VAI APARECER ABAIXO: "  HorizontalOptions="Center" TextColor="#000" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
-                <Image x:Name="img_qrcode" />
+                        
+                        <StackLayout>
+                        <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/241/241528.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" x:Name="gerar_qr_code" Clicked="gerar_qr_code_Clicked"/>
+                            <Label Text="Gerar Qr Code" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
 
-                <Button Text="Ler um QR Code" x:Name="LerPix"   Clicked="LerPix_Clicked"  />
+                        <StackLayout>
+                        <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/5499/5499710.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" Clicked="LerPix_Clicked" />
+                            <Label Text="Ler Qr Code" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
 
 
-           
+                    </StackLayout>
+
+                    
+            </ScrollView>
+            
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            
+               
+                <Button x:Name="btn_voltar_conta" Text="VOLTAR" BackgroundColor="#000" TextColor="#fff"
+                CornerRadius="15" HorizontalOptions="CenterAndExpand"  Clicked="btn_voltar_conta_Clicked" VerticalOptions="End" />
+
+             
+               
+              
 
 
         </StackLayout>

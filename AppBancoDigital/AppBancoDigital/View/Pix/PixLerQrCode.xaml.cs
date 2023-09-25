@@ -44,7 +44,7 @@ namespace AppBancoDigital.View.Pix
 
         private async void btn_voltar_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Conta());
+            await Navigation.PushAsync(new AreaPix());
         }
     }
 }

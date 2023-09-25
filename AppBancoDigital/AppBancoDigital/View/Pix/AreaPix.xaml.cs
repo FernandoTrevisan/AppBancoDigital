@@ -23,17 +23,7 @@ namespace AppBancoDigital.View.Pix
             
         }
 
-        private void GerarPix_Clicked(object sender, EventArgs e)
-        {
-            string teste = "Chave da Transferência: FernandoTrevisan ";
-
-            QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);
-            PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
-            byte[] qrCodeBytes = qRCode.GetGraphic(20);
-            img_qrcode.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
-
-        }
+        
 
         private void LerPix_Clicked(object sender, EventArgs e)
         {
@@ -42,8 +32,21 @@ namespace AppBancoDigital.View.Pix
 
 
         }
+
         
 
+        
+
+        private async void gerar_qr_code_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GerarQrCode());
+
+        }
+
+        private void btn_voltar_conta_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Conta());
+        }
     }
 }
 

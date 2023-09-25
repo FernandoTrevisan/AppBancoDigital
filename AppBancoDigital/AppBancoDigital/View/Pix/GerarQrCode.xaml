@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             
+             x:Class="AppBancoDigital.View.Pix.GerarQrCode">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="blue" Offset="0.1" />
+            <GradientStop Color="DarkRed" Offset="0.5" />
+            <GradientStop Color="#f0f0f0" Offset="1.0" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Gerar QR CODE" x:Name="gerar_qr_code" Clicked="gerar_qr_code_Clicked" />
+
+            <Image x:Name="img_qrcode" />
+           
+            
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            
+
+            <Button Text="VOLTAR" x:Name="voltar" Clicked="voltar_Clicked" BackgroundColor="#000" TextColor="#fff"
+                CornerRadius="15" HorizontalOptions="Center"/>
+
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -50,6 +50,10 @@
                             <Label Text="Area Pix" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                         </StackLayout>
 
+                        <StackLayout>
+                            <ImageButton HorizontalOptions="CenterAndExpand" Source="https://cdn-icons-png.flaticon.com/512/2746/2746077.png" CornerRadius="30" BackgroundColor="#f0f1f5" Padding="20" HeightRequest="72" WidthRequest="72" />
+                            <Label Text="Poupança" FontSize="15" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                        </StackLayout>
 
 
                         <StackLayout>
