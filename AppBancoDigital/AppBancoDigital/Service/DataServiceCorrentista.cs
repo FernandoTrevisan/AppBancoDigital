@@ -10,6 +10,7 @@ namespace AppBancoDigital.Service
 {
     public class DataServiceCorrentista : DataService
     {
+        //teste
         public static async Task<Correntista> LoginAsync(Correntista c)
         {
             var json_a_enviar = JsonConvert.SerializeObject(c);
